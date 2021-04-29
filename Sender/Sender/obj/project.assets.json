@@ -115,11 +115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salma\\source\\repos\\Sender\\Sender\\Sender.csproj",
+      "projectUniqueName": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\Sender\\Sender.csproj",
       "projectName": "Sender",
-      "projectPath": "C:\\Users\\salma\\source\\repos\\Sender\\Sender\\Sender.csproj",
+      "projectPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\Sender\\Sender.csproj",
       "packagesPath": "C:\\Users\\salma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salma\\source\\repos\\Sender\\Sender\\obj\\",
+      "outputPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\Sender\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salma\\source\\repos\\Receiver\\Receiver\\Receiver.csproj": {}
+    "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Receiver\\Receiver\\Receiver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salma\\source\\repos\\Receiver\\Receiver\\Receiver.csproj": {
+    "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Receiver\\Receiver\\Receiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salma\\source\\repos\\Receiver\\Receiver\\Receiver.csproj",
+        "projectUniqueName": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Receiver\\Receiver\\Receiver.csproj",
         "projectName": "Receiver",
-        "projectPath": "C:\\Users\\salma\\source\\repos\\Receiver\\Receiver\\Receiver.csproj",
+        "projectPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Receiver\\Receiver\\Receiver.csproj",
         "packagesPath": "C:\\Users\\salma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salma\\source\\repos\\Receiver\\Receiver\\obj\\",
+        "outputPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Receiver\\Receiver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
