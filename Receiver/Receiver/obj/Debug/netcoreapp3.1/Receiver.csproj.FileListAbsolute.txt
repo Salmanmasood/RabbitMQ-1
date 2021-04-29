@@ -1,0 +1,16 @@
+C:\Users\salma\source\repos\Receiver\Receiver\bin\Debug\netcoreapp3.1\Receiver.exe
+C:\Users\salma\source\repos\Receiver\Receiver\bin\Debug\netcoreapp3.1\Receiver.deps.json
+C:\Users\salma\source\repos\Receiver\Receiver\bin\Debug\netcoreapp3.1\Receiver.runtimeconfig.json
+C:\Users\salma\source\repos\Receiver\Receiver\bin\Debug\netcoreapp3.1\Receiver.runtimeconfig.dev.json
+C:\Users\salma\source\repos\Receiver\Receiver\bin\Debug\netcoreapp3.1\Receiver.dll
+C:\Users\salma\source\repos\Receiver\Receiver\bin\Debug\netcoreapp3.1\Receiver.pdb
+C:\Users\salma\source\repos\Receiver\Receiver\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\salma\source\repos\Receiver\Receiver\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\salma\source\repos\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.csprojAssemblyReference.cache
+C:\Users\salma\source\repos\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.AssemblyInfoInputs.cache
+C:\Users\salma\source\repos\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.AssemblyInfo.cs
+C:\Users\salma\source\repos\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.csproj.CoreCompileInputs.cache
+C:\Users\salma\source\repos\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.csproj.CopyComplete
+C:\Users\salma\source\repos\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.dll
+C:\Users\salma\source\repos\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.pdb
+C:\Users\salma\source\repos\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.genruntimeconfig.cache
