@@ -6,15 +6,21 @@ namespace Sender
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = System.ConsoleColor.Red;
-            var i = 1;
-            while (i<100)
+            Console.WriteLine("-----------------------------Sender-------------------------");
+ 
+            
+            TaskPublisher tb=new TaskPublisher();
+            tb.Publish();
+            int i = 1;
+            while (true)
             {
-                SenderMessage sm = new SenderMessage();
-                sm.SetConfigs();
+                Console.WriteLine("Type Message: ");
+                string s = Console.ReadLine();
+                tb.Message(s,i);
                 i++;
             }
-            Console.ReadLine();
+            
+           
          
             
     
