@@ -7,24 +7,28 @@ namespace Sender
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("-----------------------------Sender-------------------------");
+            var sendingconfig = new Config()
+            {
+                Host = "localhost",
+                Queue = "q",
+                Exchange = "xchange"
+            };
 
-
-            MessagePublisher messagePublisher = new MessagePublisher("localhost");
+            Console.WriteLine("-----------------------------User-1-------------------------");
+       
+            MessagePublisher messagePublisher = new MessagePublisher(sendingconfig);
             messagePublisher.SetConfigs();
-           
             while (true)
             {
-                Console.WriteLine("Type Message: ");
+                Console.ForegroundColor =ConsoleColor.Gray;
                 string s = Console.ReadLine();
-                messagePublisher.SendMessage(s);
-                
+                Console.WriteLine();
+                messagePublisher.SendMessageThroughExchange(s);
             }
-            
-           
-         
-            
-    
+
+
+
+
         }
     }
 }

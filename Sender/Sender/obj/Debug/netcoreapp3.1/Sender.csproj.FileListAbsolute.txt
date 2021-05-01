@@ -22,6 +22,8 @@ C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\bin\Debug\netcoreapp3.1\Sen
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\bin\Debug\netcoreapp3.1\Sender.pdb
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\bin\Debug\netcoreapp3.1\MessageBrokerMQ.dll
+C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\bin\Debug\netcoreapp3.1\MessageBrokerMQ.pdb
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\obj\Debug\netcoreapp3.1\Sender.csprojAssemblyReference.cache
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\obj\Debug\netcoreapp3.1\Sender.AssemblyInfoInputs.cache
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\obj\Debug\netcoreapp3.1\Sender.AssemblyInfo.cs
@@ -30,5 +32,3 @@ C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\obj\Debug\netcoreapp3.1\Sen
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\obj\Debug\netcoreapp3.1\Sender.dll
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\obj\Debug\netcoreapp3.1\Sender.pdb
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\obj\Debug\netcoreapp3.1\Sender.genruntimeconfig.cache
-C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\bin\Debug\netcoreapp3.1\MessageBrokerMQ.dll
-C:\Users\salma\source\repos\RabbitMQ-1\Sender\Sender\bin\Debug\netcoreapp3.1\MessageBrokerMQ.pdb

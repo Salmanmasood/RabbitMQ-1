@@ -10,21 +10,18 @@ namespace MessageBrokerMQ
         protected ConnectionFactory _factory;
         protected IConnection _connection;
         protected IModel _channel;
-        public ConnectionBuilder(string host)
+        protected Config _config;
+        public ConnectionBuilder(Config config)
         {
-            _factory = new ConnectionFactory() { HostName = host };
+            _config = config;
+        
         }
         public virtual void SetConfigs()
         {
-
+            _factory = new ConnectionFactory() { HostName = _config.Host };
             _connection = _factory.CreateConnection();
             _channel = _connection.CreateModel();
-            _channel.QueueDeclare(queue: "task_queue",
-                                     durable: true,
-                                     exclusive: false,
-                                     autoDelete: false,
-                                     arguments: null);
-                
+         
         }
 
       

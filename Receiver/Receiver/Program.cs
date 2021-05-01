@@ -2,8 +2,7 @@
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
-using System.Text;
-using System.Threading;
+
 using MessageBrokerMQ;
 namespace Receiver
 {
@@ -11,22 +10,32 @@ namespace Receiver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("-----------------------------Receiver-------------------------");
-            MessageReceiver messageReceiver = new MessageReceiver("localhost");
-            MessagePublisher messagePublisher = new MessagePublisher("localhost");
-            messageReceiver.SetConfigs();
-            messagePublisher.SetConfigs();
-            messageReceiver.ReceivedMessage();
-            while (true)
+            
+            var receivingconfig = new Config()
             {
-                Console.Write("You: ");
-                string s = Console.ReadLine();
-                Console.WriteLine();
-                messagePublisher.SendMessage(s);
+                Host = "localhost",
+                Queue = "q",
+                Exchange= "xchange"
+            };
 
+            Console.WriteLine("-----------------------------User-2-------------------------");
+            MessageReceiver messageReceiver = new MessageReceiver(receivingconfig);
+            try
+            {
+                messageReceiver.SetConfigs();
+                messageReceiver.ReceivedMessageThroughExchange();
             }
-         
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+            Console.ReadKey();
+
         }
+
     }
+    
     
 }
