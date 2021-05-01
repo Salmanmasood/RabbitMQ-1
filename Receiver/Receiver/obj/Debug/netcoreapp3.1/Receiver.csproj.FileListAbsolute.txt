@@ -30,3 +30,5 @@ C:\Users\salma\source\repos\RabbitMQ-1\Receiver\Receiver\obj\Debug\netcoreapp3.1
 C:\Users\salma\source\repos\RabbitMQ-1\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.dll
 C:\Users\salma\source\repos\RabbitMQ-1\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.pdb
 C:\Users\salma\source\repos\RabbitMQ-1\Receiver\Receiver\obj\Debug\netcoreapp3.1\Receiver.genruntimeconfig.cache
+C:\Users\salma\source\repos\RabbitMQ-1\Receiver\Receiver\bin\Debug\netcoreapp3.1\MessageBrokerMQ.dll
+C:\Users\salma\source\repos\RabbitMQ-1\Receiver\Receiver\bin\Debug\netcoreapp3.1\MessageBrokerMQ.pdb

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessageBrokerMQ;
+using System;
 
 namespace Sender
 {
@@ -7,17 +8,17 @@ namespace Sender
         static void Main(string[] args)
         {
             Console.WriteLine("-----------------------------Sender-------------------------");
- 
-            
-            TaskPublisher tb=new TaskPublisher();
-            tb.Publish();
-            int i = 1;
+
+
+            MessagePublisher messagePublisher = new MessagePublisher("localhost");
+            messagePublisher.SetConfigs();
+           
             while (true)
             {
                 Console.WriteLine("Type Message: ");
                 string s = Console.ReadLine();
-                tb.Message(s,i);
-                i++;
+                messagePublisher.SendMessage(s);
+                
             }
             
            

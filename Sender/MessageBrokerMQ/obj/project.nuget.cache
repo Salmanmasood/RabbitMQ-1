@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d/q34HXWktmaZTuYRbYj0HUX7S2YHDphvJwtyxWc9yGRPTjEsfPiH5p0Jd2f2ew3A2E3ARfz7tvX3l9sG89QyA==",
+  "dgSpecHash": "RimPB2WOQJMO97cy5sSe+R+mA0Ppn42FqgiMo/EjiGHnNaQalp9OtFIkfCZpvOaX1SyAfM/udj0McQLhXtVjDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\Sender\\Sender.csproj",
+  "projectFilePath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\MessageBrokerMQ\\MessageBrokerMQ.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\salma\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
     "C:\\Users\\salma\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

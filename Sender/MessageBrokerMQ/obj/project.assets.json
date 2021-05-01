@@ -32,19 +32,6 @@
         "runtime": {
           "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
         }
-      },
-      "MessageBrokerMQ/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "RabbitMQ.Client": "6.2.1"
-        },
-        "compile": {
-          "bin/placeholder/MessageBrokerMQ.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MessageBrokerMQ.dll": {}
-        }
       }
     }
   },
@@ -114,16 +101,10 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "MessageBrokerMQ/1.0.0": {
-      "type": "project",
-      "path": "../MessageBrokerMQ/MessageBrokerMQ.csproj",
-      "msbuildProject": "../MessageBrokerMQ/MessageBrokerMQ.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "MessageBrokerMQ >= 1.0.0",
       "RabbitMQ.Client >= 6.2.1"
     ]
   },
@@ -134,11 +115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\Sender\\Sender.csproj",
-      "projectName": "Sender",
-      "projectPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\Sender\\Sender.csproj",
+      "projectUniqueName": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\MessageBrokerMQ\\MessageBrokerMQ.csproj",
+      "projectName": "MessageBrokerMQ",
+      "projectPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\MessageBrokerMQ\\MessageBrokerMQ.csproj",
       "packagesPath": "C:\\Users\\salma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\Sender\\obj\\",
+      "outputPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\MessageBrokerMQ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -157,11 +138,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\MessageBrokerMQ\\MessageBrokerMQ.csproj": {
-              "projectPath": "C:\\Users\\salma\\source\\repos\\RabbitMQ-1\\Sender\\MessageBrokerMQ\\MessageBrokerMQ.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

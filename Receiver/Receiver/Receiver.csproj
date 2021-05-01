@@ -9,4 +9,10 @@
     <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="MessageBrokerMQ">
+      <HintPath>..\..\Sender\MessageBrokerMQ\bin\Debug\netcoreapp3.1\MessageBrokerMQ.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
