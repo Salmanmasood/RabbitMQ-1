@@ -11,18 +11,18 @@ namespace MessageBrokerMQ
     {
         public MessageReceiver(string host):base(host)
         {
-
+          
         }
-        public void ReceivedMessage()
-        {
-            
-                _channel.QueueDeclare(queue: "task_queue",
-                                     durable: true,
-                                     exclusive: false,
-                                     autoDelete: false,
-                                     arguments: null);
 
-                _channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
+        public override void SetConfigs()
+        {
+            base.SetConfigs();
+            _channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
+        }
+
+            public void ReceivedMessage()
+            {
+            
 
                 var message = string.Empty;
 
@@ -33,14 +33,12 @@ namespace MessageBrokerMQ
                      message = Encoding.UTF8.GetString(body);
                     int dots = message.Split('.').Length - 1;
                     Thread.Sleep(dots * 1000);
-                    Console.WriteLine(message);
+                    Console.WriteLine("Friend: "+message);
                     _channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
                 };
                 _channel.BasicConsume(queue: "task_queue",
                                      autoAck: false,
                                      consumer: consumer);
-
-          
 
 
         }

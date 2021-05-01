@@ -13,49 +13,19 @@ namespace Receiver
         {
             Console.WriteLine("-----------------------------Receiver-------------------------");
             MessageReceiver messageReceiver = new MessageReceiver("localhost");
+            MessagePublisher messagePublisher = new MessagePublisher("localhost");
             messageReceiver.SetConfigs();
-
+            messagePublisher.SetConfigs();
             messageReceiver.ReceivedMessage();
-            Console.ReadKey();
-            #region Start
-            //var factory = new ConnectionFactory() { HostName = "localhost" };
-            //using (var connection = factory.CreateConnection())
-            //using (var channel = connection.CreateModel())
-            //{
-            //    channel.QueueDeclare(queue: "task_queue",
-            //                         durable: true,
-            //                         exclusive: false,
-            //                         autoDelete: false,
-            //                         arguments: null);
+            while (true)
+            {
+                Console.Write("You: ");
+                string s = Console.ReadLine();
+                Console.WriteLine();
+                messagePublisher.SendMessage(s);
 
-            //    channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
-
-            //    Console.WriteLine(" [*] Waiting for messages.");
-
-            //    var consumer = new EventingBasicConsumer(channel);
-            //    consumer.Received += (sender, ea) =>
-            //    {
-            //        var body = ea.Body.ToArray();
-            //        var message = Encoding.UTF8.GetString(body);
-            //        Console.WriteLine("Sender: {0}", message);
-
-            //        int dots = message.Split('.').Length - 1;
-            //        Thread.Sleep(dots * 1000);
-
-                  
-
-            //        // Note: it is possible to access the channel via
-            //        //       ((EventingBasicConsumer)sender).Model here
-            //        channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
-            //    };
-            //    channel.BasicConsume(queue: "task_queue",
-            //                         autoAck: false,
-            //                         consumer: consumer);
-
-            //    Console.WriteLine(" Press [enter] to exit.");
-            //    Console.ReadLine();
-            //}
-            #endregion
+            }
+         
         }
     }
     

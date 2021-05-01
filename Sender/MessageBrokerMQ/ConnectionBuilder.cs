@@ -14,7 +14,7 @@ namespace MessageBrokerMQ
         {
             _factory = new ConnectionFactory() { HostName = host };
         }
-        public void SetConfigs()
+        public virtual void SetConfigs()
         {
 
             _connection = _factory.CreateConnection();
