@@ -6,3 +6,4 @@ C:\Users\salma\source\repos\RabbitMQ-1\Sender\MessageBrokerMQ\obj\Debug\netcorea
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\MessageBrokerMQ\obj\Debug\netcoreapp3.1\MessageBrokerMQ.csproj.CoreCompileInputs.cache
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\MessageBrokerMQ\obj\Debug\netcoreapp3.1\MessageBrokerMQ.dll
 C:\Users\salma\source\repos\RabbitMQ-1\Sender\MessageBrokerMQ\obj\Debug\netcoreapp3.1\MessageBrokerMQ.pdb
+C:\Users\salma\source\repos\RabbitMQ-1\Sender\MessageBrokerMQ\obj\Debug\netcoreapp3.1\MessageBrokerMQ.csprojAssemblyReference.cache

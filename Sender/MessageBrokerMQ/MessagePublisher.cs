@@ -13,7 +13,6 @@ namespace MessageBrokerMQ
 
         }
 
-
         public string SendMessageThroughQueue(string message)
         {
             _channel.QueueDeclare(queue: _config.Queue,
@@ -38,10 +37,10 @@ namespace MessageBrokerMQ
 
         public string SendMessageThroughExchange(string message)
         {
-           _channel.ExchangeDeclare(exchange: _config.Exchange, type: ExchangeType.Fanout);
+           _channel.ExchangeDeclare(exchange: _config.Exchange, type: _config.ExchangeType);
             var body = Encoding.UTF8.GetBytes(message);
             _channel.BasicPublish(exchange: _config.Exchange,
-                                 routingKey: "",
+                                 routingKey: _config.RoutingKey,
                                  basicProperties: null,
                                  body: body);
             return message;

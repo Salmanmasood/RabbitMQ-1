@@ -11,7 +11,9 @@ namespace Sender
             {
                 Host = "localhost",
                 Queue = "q",
-                Exchange = "xchange"
+                Exchange = "xchange",
+                ExchangeType=Config.Direct,
+                RoutingKey="abcd"
             };
 
             Console.WriteLine("-----------------------------User-1-------------------------");

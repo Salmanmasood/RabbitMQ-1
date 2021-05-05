@@ -20,7 +20,7 @@ namespace MessageBrokerMQ
           
         }
 
-            public void ReceivedMessageThroughQueue()
+        public void ReceivedMessageThroughQueue()
         {
             _channel.QueueDeclare(queue: _config.Queue,
                                  durable: true,
@@ -53,12 +53,12 @@ namespace MessageBrokerMQ
         public void ReceivedMessageThroughExchange()
         {
 
-            _channel.ExchangeDeclare(exchange: _config.Exchange, type: ExchangeType.Fanout);
+            _channel.ExchangeDeclare(exchange: _config.Exchange, type: _config.ExchangeType);
 
             var queueName = _channel.QueueDeclare().QueueName;
             _channel.QueueBind(queue: queueName,
                               exchange: _config.Exchange,
-                              routingKey: "");
+                              routingKey: _config.RoutingKey);
 
             
             var consumer = new EventingBasicConsumer(_channel);
@@ -66,7 +66,8 @@ namespace MessageBrokerMQ
             {
                 var body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
-                Console.WriteLine( message);
+                var routingKey = ea.RoutingKey;
+                Console.WriteLine( message+" from---> "+routingKey);
             };
             _channel.BasicConsume(queue: queueName,
                                  autoAck: true,
